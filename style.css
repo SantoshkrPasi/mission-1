@@ -21,6 +21,7 @@
   padding: 12px;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
  }
  .navbar 
  {
@@ -51,7 +52,11 @@
  .hero_image{
   width: 100%;
  }
-
+ .hero_text{
+  font-size: 30px;
+  color: #1d3557;
+  margin: 20px 0;
+ }
 @media (min-width:768px) {
    .navbar
    {
@@ -63,7 +68,7 @@
    width: 150px;
    }
    .button_primary{
-    padding: 20px;
+    padding: 12px 20px;
     font-size: 20px;
    }
    .hero_container{
@@ -74,12 +79,17 @@
     gap: 10px;
    }
 }
-@media (min-width:1020px) {
+@media (min-width:1020px) 
+{
   .container{
-    max-width: 1010px;
+    max-width: 900px;
   }
-   .hero_image_container{
-    width: 500px;
-    height: 500px;
+   .hero_text{
+    font-size: 50px;
    }
+}
+@media (min-width:1400px) {
+  .container{
+    max-width: 1250px;
+  }
 }
